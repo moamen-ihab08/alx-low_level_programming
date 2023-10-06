@@ -1,18 +1,19 @@
 #include <stdio.h>
-
-
+#include <unistd.h>
 /**
- * main - program that prints the alphabet in lowercase and upper case
- *
- * Return: Always 0.
+ * main - Entry point
+ * Description: prints char below 10
+ * Return: Always 0 (success)
  */
 
-int main() {
-    int i;
+int main(void)
+{
+	int a;
 
-    for (i = 0; i < 10; i++) {
-        printf("%d", i);
-    }
-
-    return 0;
+	for (a = 0; a < 10; a++)
+	{
+		putchar(a + '0');
+	}
+	putchar('\n');
+	return (0);
 }
