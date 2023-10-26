@@ -6,7 +6,6 @@
   * Return: value of a given number passed to the function
   */
 
-
 int _pow_recursion(int x, int y)
 {
 
